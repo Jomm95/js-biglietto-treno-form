@@ -3,3 +3,26 @@
     padding:0;
     box-sizing: border-box;
 }
+
+body {
+    background-color: #b91450;
+}
+
+section > div {
+    min-height: 190px;
+}
+
+.ms_border_input {
+    border:1px solid #b91450 ;
+}
+
+#price-calculator span {
+    color:#b91450;
+    font-weight: 600;
+}
+
+#price-calculator button {
+    background-color: #cccccc;
+    color:#b91450;
+    font-weight: 700;
+}
