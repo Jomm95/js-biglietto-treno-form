@@ -8,12 +8,16 @@ body {
     background-color: #b91450;
 }
 
-section > div {
+/* section > div {
     min-height: 190px;
-}
+} */
 
 .ms_border_input {
     border:1px solid #b91450 ;
+}
+
+#price-calculator > div {
+    min-height: 190px;
 }
 
 #price-calculator span {
@@ -25,4 +29,13 @@ section > div {
     background-color: #cccccc;
     color:#b91450;
     font-weight: 700;
+}
+
+#your-ticket > div {
+    min-height: 175px;
+    }
+
+
+#your-ticket .col-2, #your-ticket .col-3 {
+min-height: 100px;
 }

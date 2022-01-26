@@ -18,44 +18,74 @@
                     <div class="col mt-4 ps-5 pe-0">
                         <span>Nome Cognome</span>
                         <br>
-                        <input type="text" class="form-control-sm mt-3 ms_border_input" placeholder="Nome Cognome" aria-label="Name-Surname">
+                        <input type="text" id="name" class="form-control-sm mt-3 ms_border_input" placeholder="Nome Cognome" aria-label="Name-Surname">
                     </div>
                     <div class="col mt-4 px-0">
                         <span>Km da percorrere</span>
                         <br>
-                        <input type="text" class="form-control-sm mt-3 ms_border_input" placeholder="Km da percorrere" aria-label="Km da percorrere">
+                        <input type="number" id="distance" class="form-control-sm mt-3 ms_border_input" placeholder="Km da percorrere" aria-label="Km da percorrere">
                     </div>
                     <div class="col mt-4 pe-5 ps-0">
                         <span>Fascia d'età</span>
                         <br>
-                        <select class="form-select-sm mt-3 ms_border_input" aria-label="Default select example">
+                        <select id="age" class="form-select-sm mt-3 ms_border_input" aria-label="Default select example">
                             <option selected>Clicca per selezionare età</option>
-                            <option value="1"> Minore di 18 anni</option>
-                            <option value="2">Più di 18 anni</option>
-                            <option value="3">Over 65</option>
+                            <option value="minorenne"> Minore di 18 anni</option>
+                            <option value="maggiorenne">Più di 18 anni</option>
+                            <option value="over65">Over 65</option>
                           </select>
                     </div>
                 </div>
                 <div class="row text-center align-items-end mt-5">
                     <div class="col">
-                        <button class="btn btn-outline-warning p-1 me-1" id="start-button">Genera</button> <button class="btn btn-outline-secondary p-1 ms-1" id="cancel-button">Annulla</button>
+                        <button id="generate-button" class="btn btn-outline-warning p-1 me-1" id="start-button">Genera</button> <button id="cancel-button" class="btn btn-outline-secondary p-1 ms-1">Annulla</button>
                     </div>
                     
                 </div>
             </div>
-
-            </div>
-
-
-
-
-
-
         </section>
 
+        <!-- Sezione "IL TUO BIGLIETTO" -->
+
         <h2 class="text-white text-center mt-3 mb-0">IL TUO BIGLIETTO</h2>
+
         <section id="your-ticket">
             <div class="container bg-white">
+
+                <h4 class="pt-3 mb-0">DETTAGLIO PASSEGGERI</h4>
+
+                <div class="row mt-3">
+
+                    <div class="col-3 bg-secondary ms-3 fw-bold p-3">
+                        <span>NOME PASSEGGERO </span>
+                        <br>
+                        <span>Jon Snow</span>
+                    </div>
+                    <div class="col-2 border border-1 border-start-0 border-end-0">
+                        <span class="d-block mt-2 fw-bold">Offerta</span>
+                        <br>
+                        <span class="d-block mt-2">Biglietto standard</span>
+                    </div>
+                    <div class="col-2 align-content-between border border-1 border-start-0 border-end-0">
+                        <span class="d-block mt-2 fw-bold">Carrozza</span>
+                        <br>
+                        <span class="d-block mt-2">5</span>
+                    </div>
+                    <div class="col-2 border border-1 border-start-0 border-end-0">
+                        <span class="d-block mt-2 fw-bold">Codice CP</span>
+                        <br>
+                        <span class="d-block mt-2">92911</span>
+                    </div>
+                    <div class="col-2 border border-1 border-start-0 border-end-0">
+                        <span class="d-block mt-2 fw-bold">Costo biglietto</span>
+                        <br>
+                        <span class="d-block mt-2">2.10€</span>
+                    </div>
+                    
+
+
+
+                </div>
 
             </div>
 
