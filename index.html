@@ -49,37 +49,42 @@
 
         <h2 class="text-white text-center mt-3 mb-0">IL TUO BIGLIETTO</h2>
 
-        <section id="your-ticket">
+        <section id="your-ticket" class="d-none">
             <div class="container bg-white">
 
                 <h4 class="pt-3 mb-0">DETTAGLIO PASSEGGERI</h4>
 
                 <div class="row mt-3">
 
+                        <!-- Colonna passeggero -->
                     <div class="col-3 bg-secondary ms-3 fw-bold p-3">
                         <span>NOME PASSEGGERO </span>
                         <br>
-                        <span>Jon Snow</span>
+                        <span id="passenger-name"></span>
                     </div>
+                    <!-- colonna biglietto e tipo di tariffa -->
                     <div class="col-2 border border-1 border-start-0 border-end-0">
                         <span class="d-block mt-2 fw-bold">Offerta</span>
                         <br>
-                        <span class="d-block mt-2">Biglietto standard</span>
+                        <span id="tariffa" class="d-block mt-2"></span>
                     </div>
+                    <!-- colonna carrozza -->
                     <div class="col-2 align-content-between border border-1 border-start-0 border-end-0">
                         <span class="d-block mt-2 fw-bold">Carrozza</span>
                         <br>
-                        <span class="d-block mt-2">5</span>
+                        <span id="num-carrozza" class="d-block mt-2">5</span>
                     </div>
+                    <!-- colonna codice CP -->
                     <div class="col-2 border border-1 border-start-0 border-end-0">
                         <span class="d-block mt-2 fw-bold">Codice CP</span>
                         <br>
                         <span class="d-block mt-2">92911</span>
                     </div>
+                    <!-- colonna costo biglietto -->
                     <div class="col-2 border border-1 border-start-0 border-end-0">
                         <span class="d-block mt-2 fw-bold">Costo biglietto</span>
                         <br>
-                        <span class="d-block mt-2">2.10€</span>
+                        <span id="ticket-price" class="d-block mt-2">2.10€</span>
                     </div>
                     
 

@@ -17,20 +17,40 @@ button.addEventListener("click",
             //definisco i prezzi dei biglietti e il costo al km
 
             const priceKm = 0.21;
-            let fullTicket = distance * priceKm;
+            let ticket_price = distance * priceKm;
 
             //calcolo del prezzo del biglietto nei vari casi
 
+            let tariffa = "Tariffa standard";
+
             if(age == "minorenne") {
-                let ticket20 = fullTicket - (fullTicket * 20 / 100);
+                ticket_price -= (ticket_price * 20 / 100);
+                tariffa = "Tariffa Minorenni";
             } else if (age == "over65") {
-                let ticket40 = fullTicket - (fullTicket * 40 / 100);
-            } else {
-                fullTicket = fullTicket;
+                ticket_price -= (ticket_price * 40 / 100);
+                tariffa = "Tariffa Over 65";
             }
+            
 
             //faccio comparire la sezione "il tuo ticket"
+
+            let your_Ticket = document.getElementById("your-ticket");
+            your_Ticket.classList.remove("d-none"); 
             
+            //adesso inserisco tutti i dati nel biglietto
+
+            //nome
+            document.getElementById("passenger-name").innerHTML = name;
+
+            //tipo di tariffa
+            document.getElementById("tariffa").innerHTML = tariffa;
+
+            //costo biglietto
+            document.getElementById("ticket-price").innerHTML = ticket_price.toFixed(2);
+
+            //numero carrozza
+            document.getElementById("num-carrozza").innerHTML = 
+
             
 
 
