@@ -49,9 +49,33 @@ button.addEventListener("click",
             document.getElementById("ticket-price").innerHTML = ticket_price.toFixed(2);
 
             //numero carrozza
-            document.getElementById("num-carrozza").innerHTML = 
+            document.getElementById("num-carrozza").innerHTML = Math.floor(Math.random() * 10) + 1;
 
-            
+            //codice CP
+            function getRandomInt(min, max) {
+                min = Math.ceil(min);
+                max = Math.floor(max);
+                return Math.floor(Math.random() * (max - min) + min);
+              }
+            document.getElementById("cp_code").innerHTML = getRandomInt(90000, 99999);
+
+            //Imposto gli eventi per il click su tasto annulla
+
+            const cancel = document.getElementById("cancel-button");
+
+            cancel.addEventListener("click",
+                function() {
+
+                    //nascondo il biglietto
+                    let your_Ticket = document.getElementById("your-ticket");
+                    your_Ticket.classList.add("d-none");
+
+                    //setto i valori iniziali a zero
+                    document.getElementById("name").value = "";
+                    document.getElementById("distance").value = "";
+                    document.getElementById("age").value = "Clicca per selezionare età";
+                }
+            )
 
 
 
